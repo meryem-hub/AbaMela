@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+:root {
+    --primary-color: #2A5C82;       
+    --accent-color: #FF6B35;       
+    --text-color: #333;
+    --hover-color: #1A3A4D;
+    --background-color: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+  }
