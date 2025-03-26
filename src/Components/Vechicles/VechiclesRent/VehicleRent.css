@@ -1,0 +1,136 @@
+.vehicle-rent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .vehicle-rent-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+  }
+  
+  .search-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .search-form form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: end;
+  }
+  
+  .search-button:hover {
+    background-color: #0f172a;
+  }
+  
+  .vehicle-list h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0f172a;
+  }
+  
+  .vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .vehicle-details {
+    padding: 15px;
+  }
+  
+  .vehicle-details h4 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+  }
+  
+  .vehicle-details p {
+    margin: 5px 0;
+    color: #7f8c8d;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #0f172a !important;
+    font-size: 18px;
+  }
+  
+  .rent-now {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:#0f172a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rent-now:hover {
+    background-color: #ffbd59;
+  }
+  
+  @media (max-width: 768px) {
+    .search-form form {
+      grid-template-columns: 1fr;
+    }
+  }

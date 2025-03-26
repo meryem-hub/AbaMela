@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       title: 'Vehicles',
-      links: ['Purchase Cars', 'Rent Vehicles', 'Luxury Fleet', 'Sell Your Car']
+      links: ['Purchase Cars', 'Rent Vehicles', 'Sell Your Car']
     },
     {
       title: 'Company',

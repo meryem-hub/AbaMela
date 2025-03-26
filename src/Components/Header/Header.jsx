@@ -18,18 +18,21 @@ const Header = () => {
   }, []);
 
   const navItems = [
+    {  label :'Home',path:'/',},
+ 
     { 
+      label: 'Vehicles', 
+      dropdown: [
+        { title: 'Buy Vechicle', path: '/buy-car' },
+        { title: 'Rent Vechile', path: '/rent-car' },
+      ]
+    },
+    { 
+    
       label: 'Housing', 
       dropdown: [
         { title: 'Buy House', path: '/buy-house' },
         { title: 'Rent House', path: '/rent-house' },
-      ]
-    },
-    { 
-      label: 'Vehicles', 
-      dropdown: [
-        { title: 'Buy Car', path: '/buy-car' },
-        { title: 'Rent Car', path: '/rent-car' },
       ]
     },
     { label: 'Services', path: '/services' },
@@ -45,7 +48,6 @@ const Header = () => {
           <img src={Logo} className="logo" />
         </Link>
 
-        {/* Desktop Navigation */}
         <nav className="desktop-nav">
           <ul className="nav-list">
             {navItems.map((item) => (
@@ -91,7 +93,6 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* Right Section */}
         <div className="header-right">
 
 <div className="language-switcher">
@@ -149,7 +150,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <button 
           className="mobile-menu-btn"
           onClick={() => setMobileOpen(!isMobileOpen)}

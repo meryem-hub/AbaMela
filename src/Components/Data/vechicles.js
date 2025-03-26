@@ -1,0 +1,22 @@
+export const vehiclesForSale = [
+  { id: 1, make: 'Toyota', model: 'Camry', year: 2020, price: '$22,500', mileage: '25,000', image: '/Images/ToyotaCamry.png' },
+  { id: 2, make: 'Honda', model: 'Accord', year: 2019, price: '$20,000', mileage: '30,000', image: '/Images/HondaAccord.png' },
+  { id: 3, make: 'Ford', model: 'F-150', year: 2021, price: '$35,000', mileage: '15,000', image: '/Images/Ford2.png' },
+  { id: 4, make: 'BMW', model: 'X5', year: 2018, price: '$38,000', mileage: '40,000', image: '/Images/BMW2.png' },
+  { id: 5, make: 'Chevrolet', model: 'Silverado 1500', year: 2020, price: '$32,000', mileage: '28,000', image: '/Images/ChevySilverado.png' },
+  { id: 6, make: 'Tesla', model: 'Model 3', year: 2021, price: '$42,000', mileage: '12,000', image: '/Images/TeslaModel3.png' },
+  { id: 7, make: 'Jeep', model: 'Wrangler', year: 2019, price: '$31,500', mileage: '35,000', image: '/Images/JeepWrangler.png' },
+  { id: 8, make: 'Subaru', model: 'Outback', year: 2020, price: '$26,800', mileage: '22,000', image: '/Images/SubaruOutback.png' },
+  { id: 9, make: 'Mercedes-Benz', model: 'C-Class', year: 2019, price: '$36,500', mileage: '24,000', image: '/Images/MercedesCClass.png' },
+  { id: 10, make: 'Nissan', model: 'Rogue', year: 2021, price: '$24,900', mileage: '18,000', image: '/Images/NissanRogue.png' },
+  { id: 11, make: 'Hyundai', model: 'Tucson', year: 2022, price: '$27,300', mileage: '10,000', image: '/Images/HyundaiTucson.png' },
+  { id: 12, make: 'Volkswagen', model: 'Tiguan', year: 2020, price: '$23,700', mileage: '29,000', image: '/Images/VWTiguan.png' },
+  { id: 13, make: 'Lexus', model: 'RX 350', year: 2018, price: '$34,000', mileage: '42,000', image: '/Images/LexusRX350.png' },
+  { id: 14, make: 'Audi', model: 'Q5', year: 2019, price: '$33,500', mileage: '36,000', image: '/Images/AudiQ5.png' },
+  { id: 15, make: 'Ram', model: '1500', year: 2021, price: '$37,800', mileage: '20,000', image: '/Images/Ram1500.png' },
+  { id: 16, make: 'Kia', model: 'Sorento', year: 2020, price: '$25,600', mileage: '26,000', image: '/Images/KiaSorento.png' },
+  { id: 17, make: 'Mazda', model: 'CX-5', year: 2021, price: '$26,200', mileage: '15,000', image: '/Images/MazdaCX5.png' },
+  { id: 18, make: 'GMC', model: 'Sierra 1500', year: 2020, price: '$38,500', mileage: '25,000', image: '/Images/GMCSierra.png' },
+  { id: 19, make: 'Land Rover', model: 'Range Rover Evoque', year: 2019, price: '$39,900', mileage: '32,000', image: '/Images/RangeRoverEvoque.png' },
+  { id: 20, make: 'Porsche', model: 'Cayenne', year: 2018, price: '$45,000', mileage: '38,000', image: '/Images/PorscheCayenne.png' }
+];
