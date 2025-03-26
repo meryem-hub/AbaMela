@@ -1,0 +1,113 @@
+/* components/HouseCard.css */
+.house-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: white;
+  }
+  
+  .house-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .house-image {
+    position: relative;
+    height: 200px;
+  }
+  
+  .house-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .price-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(52, 152, 219, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .house-details {
+    padding: 15px;
+  }
+  
+  .house-details h4 {
+    margin: 0 0 5px;
+    color: #2c3e50;
+    font-size: 18px;
+  }
+  
+  .location {
+    color: #7f8c8d;
+    margin: 0 0 15px;
+    font-size: 14px;
+  }
+  
+  .specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .spec-label {
+    font-weight: 600;
+    color: #7f8c8d;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .view-details,
+  .contact-owner,
+  .contact-agent {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-details {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .view-details:hover {
+    background-color: #2980b9;
+  }
+  
+  .contact-owner {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .contact-owner:hover {
+    background-color: #27ae60;
+  }
+  
+  .contact-agent {
+    background-color: #e67e22;
+    color: white;
+  }
+  
+  .contact-agent:hover {
+    background-color: #d35400;
+  }

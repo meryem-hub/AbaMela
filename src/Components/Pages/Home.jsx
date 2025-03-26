@@ -1,19 +1,20 @@
-import React from 'react'
-import Header from '../Header/Header'
+import React from 'react';
+import Header from '../Header/Header';
 import VehiclePreview from '../VehiclePreview/VehiclePreview';
 import { vehiclesForSale } from '../Data/vechicles.js';
-import Footer from '../Footer/Footer'
-import VehicleSell from '../Vechicles/VechiclesSell/VehicleSell'
-import VehicleRent from '../Vechicles/VechiclesRent/VehicleRent'
+import { housesForRent } from '../Data/houses.js';
+import { housesForSale } from '../Data/houses.js';
+import HousePreview from '../Housing/HousePreview/HousePreview.jsx'; // Corrected path here
 
 const Home = () => {
   return (
     <div>
-<Header/>
-<VehiclePreview vehicles={vehiclesForSale} />
-
+      <Header />
+      <VehiclePreview vehicles={vehiclesForSale} />
+      <HousePreview houses={housesForRent} isRental={true} />
+      <HousePreview houses={housesForSale} isRental={false} />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,47 @@
+/* components/HousePreview.css */
+.house-preview {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .preview-header h2 {
+    color: #2c3e50;
+    font-size: 24px;
+  }
+  
+  .view-all {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .view-all:hover {
+    color: #2980b9;
+  }
+  
+  .houses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  @media (max-width: 768px) {
+    .preview-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .houses-grid {
+      grid-template-columns: 1fr;
+    }
+  }

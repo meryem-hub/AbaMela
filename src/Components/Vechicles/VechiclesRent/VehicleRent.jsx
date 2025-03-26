@@ -20,6 +20,14 @@ const VehicleRent = () => {
     { id: 2, name: 'Honda CR-V', type: 'suv', price: '$70/day', seats: 7, image:Honda },
     { id: 3, name: 'Ford Transit', type: 'van', price: '$90/day', seats: 12, image: Ford },
     { id: 4, name: 'BMW 3 Series', type: 'luxury', price: '$120/day', seats: 5, image: BMW },
+    { id: 5, name: 'BMW 3 Series', type: 'luxury', price: '$120/day', seats: 5, image: BMW },
+    { id: 6, name: 'BMW 3 Series', type: 'luxury', price: '$120/day', seats: 5, image: BMW },
+    { id: 7, name: 'BMW 3 Series', type: 'luxury', price: '$120/day', seats: 5, image: BMW },
+    { id: 8, name: 'Toyota Corolla', type: 'car', price: '$50/day', seats: 5, image: Toyota },
+
+
+
+    
   ];
 
   return (

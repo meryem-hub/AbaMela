@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import VehicleCard from '../VehicleCard/VehicleCard';
 import './VehiclePreview.css';
 
-const VehiclePreview = ({ vehicles }) => {
+const VehiclePreview = ({ vehicles = [] }) => {  // Default to an empty array if vehicles is undefined
   const previewVehicles = vehicles.slice(0, 8);
 
   return (
@@ -18,9 +18,7 @@ const VehiclePreview = ({ vehicles }) => {
           <VehicleCard key={`${vehicle.id}-${index}`} vehicle={vehicle} isPreview={true} />
         ))}
       </div>
- 
     </div>
   );
 };
-
 export default VehiclePreview;
