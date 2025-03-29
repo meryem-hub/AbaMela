@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import VehicleCard from '../VehicleCard/VehicleCard';
 import './VehiclePreview.css';
 
-const VehiclePreview = ({ vehicles = [] }) => {  // Default to an empty array if vehicles is undefined
+const VehiclePreview = ({ vehicles = [] }) => {  
   const previewVehicles = vehicles.slice(0, 8);
 
   return (
