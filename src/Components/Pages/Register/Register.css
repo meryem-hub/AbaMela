@@ -1,0 +1,245 @@
+:root {
+  --primary: #ffbd59;
+  --primary-light: rgba(7, 135, 53, 0.1);
+  --secondary: #da121a; 
+  --accent: #fcdd09;
+  --text-dark: #2d3748;
+  --text-light: #f8f9fa;
+  --gray: #64748b;
+  --light-gray: #e2e8f0;
+  --error: #e53e3e;
+  --error-light: rgba(229, 62, 62, 0.1);
+  --success: #38a169;
+  --transition: all 0.3s ease;
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.register-container {
+  padding-top: 50px;
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--text-light);
+}
+
+.register-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.register-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--gray);
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.9rem 1rem 0.9rem 3rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.input-wrapper input.error {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px var(--error-light);
+}
+
+.error-message {
+  color: var(--error);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.form-agreement {
+  margin: 1.5rem 0;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  min-width: 18px;
+  height: 18px;
+  background-color: white;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.checkmark:after {
+  content: "✓";
+  color: white;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+.register-button {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+  margin-bottom: 1.5rem;
+}
+
+.register-button:hover {
+  background: #ffbd59;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(7, 135, 53, 0.2);
+}
+
+.register-button:disabled {
+  background: var(--light-gray);
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.login-redirect {
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.login-redirect a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .register-container {
+      flex-direction: column;
+  }
+  .register-right {
+      padding: 2rem 1rem;
+  }
+  .register-form {
+      max-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+      padding: 1.5rem;
+  }
+  .register-form h2 {
+      font-size: 1.5rem;
+  }
+}

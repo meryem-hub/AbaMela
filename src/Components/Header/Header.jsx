@@ -93,9 +93,8 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="header-right">
 
-<div className="language-switcher">
+{/* <div className="language-switcher">
   <motion.div 
     className="globe-container"
     onClick={() => setIsLangOpen(!isLangOpen)}
@@ -137,12 +136,12 @@ const Header = () => {
       </motion.div>
     )}
   </AnimatePresence>
-</div>
+</div> */}
 
        
           <div className="header-auth">
-            <Link to="/login" className="auth-btn login-btn">
-              Sign In
+            <Link to="/login" className="auth-btn login-btn ">
+              LogIn
             </Link>
             <Link to="/register" className="auth-btn register-btn">
             Register
@@ -206,7 +205,6 @@ const Header = () => {
             </motion.nav>
           )}
         </AnimatePresence>
-      </div>
     </header>
   );
 };

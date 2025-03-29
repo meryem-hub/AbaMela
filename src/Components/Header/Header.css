@@ -34,7 +34,7 @@ body {
 .header-container {
   max-width: 1440px;
   margin: 0 auto;
-  /* padding: 1rem 2rem; */
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
 padding-left: 10%;
@@ -254,14 +254,20 @@ padding-right: 10%;
 
 .header-auth {
   display: flex;
+  flex-direction: row; 
+  align-items: center;
   gap: 1rem;
+  margin-top: 0;
+  padding-left: 10%;
 }
 
+
 .auth-btn {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
   transition: var(--transition);
+  padding-left: 20%;
 }
 
 .login-btn {
@@ -297,8 +303,8 @@ padding-right: 10%;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 80%;
-  max-width: 320px;
+  width: 100%;
+  max-width: 370px;
   background: var(--glass-bg);
   padding: 2rem;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
@@ -307,6 +313,15 @@ padding-right: 10%;
 .mobile-nav-item {
   padding: 1rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffbd59;
+  width: 100%;
+  text-align: center;
+text-decoration:none;
+
+}
+.mobile-nav-item a{
+text-decoration: none;
+
 }
 
 .mobile-dropdown-content {
@@ -315,6 +330,36 @@ padding-right: 10%;
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none;
+  }
+  .auth-btn {
+
+    border-radius: 8px;
+    font-weight: 600;
+    color: #e74c3c;
+    transition: var(--transition);
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .header-auth {
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .logo-container {
+    width: 140px;
+  }
+}
+
 @media (max-width: 1024px) {
   .desktop-nav {
     display: none;
@@ -328,17 +373,30 @@ padding-right: 10%;
     display: none;
   }
 
-  .logo-container {
-    width: 140px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-container {
-    padding: 1rem;
+  .header-auth {
+ flex-direction: row;
+    
   }
 
-  .logo-container {
-    width: 120px;
+  .auth-btn {
+    width: 100%;
+    text-align: center;
+    padding: px;
+    display: inline;
+    font-size: 1rem;
   }
+
+  .login-btn {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: none;
+  }
+  .logo-container {
+    display: none;
+  }
+
+  .register-btn {
+    background: var(--primary-color);
+    color: white;
+ }
 }
